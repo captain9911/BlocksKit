@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
-  s.name                  = 'BlocksKit'
+  s.name                  = 'DCBlocksKit'
   s.version               = '2.2.6'
   s.license               = 'MIT'
   s.summary               = 'The Objective-C block utilities you always wish you had.'
   s.homepage              = 'https://zwaldowski.github.io/BlocksKit'
   s.author                = { 'Zachary Waldowski' => 'zach@waldowski.me',
                               'Alexsander Akers'  => 'a2@pnd.mn' }
-  s.source                = { :git => 'https://github.com/zwaldowski/BlocksKit.git', :tag => "v#{s.version}" }
+  s.source                = { :git => 'https://github.com/captain9911/BlocksKit.git', :tag => "v#{s.version}" }
   s.requires_arc          = true
   s.osx.deployment_target = '10.8'
   s.ios.deployment_target = '6.0'
@@ -14,11 +14,11 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'All'
   s.subspec 'All' do |ss|
-    ss.dependency 'BlocksKit/Core'
-    ss.dependency 'BlocksKit/DynamicDelegate'
-    ss.ios.dependency 'BlocksKit/MessageUI'
-    ss.ios.dependency 'BlocksKit/QuickLook'
-    ss.ios.dependency 'BlocksKit/UIKit'
+    ss.dependency 'DCBlocksKit/Core'
+    ss.dependency 'DCBlocksKit/DynamicDelegate'
+    ss.ios.dependency 'DCBlocksKit/MessageUI'
+    ss.ios.dependency 'DCBlocksKit/QuickLook'
+    ss.ios.dependency 'DCBlocksKit/UIKit'
   end
 
   s.subspec 'Core' do |ss|
